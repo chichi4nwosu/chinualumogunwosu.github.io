@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chinualumogu Nwosu</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("a[href^='#']").forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-    <h1>hello</h1>
+  <!-- Header -->
+  <header>
+    <div class="logo">Chinualumogu</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills-awards">Skills & Awards</a>
+      <a href="#organizations">Organizations</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <p class="intro">Hey! I'm</p>
+    <h1><strong>Chinualumogu Nwosu</strong></h1>
+    <p>Freshman at UT Austin</p>
+    <div class="hero-buttons">
+      <a href="resume.pdf" class="btn" target="_blank">Resume</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://tiktok.com" target="_blank">TikTok</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Content Sections -->
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>I'm Chinua, a passionate CS student exploring the intersection of technology, creativity, and service.</p>
+  </section>
+
+  <section id="skills-awards" class="content-section split">
+    <div>
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, Java, C++</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Godot, Unity, Adobe PS</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Awards</h2>
+      <ul>
+        <li>NCWIT Honorable Mention</li>
+        <li>Coca-Cola Scholar Semifinalist</li>
+        <li>Texas STEM Stand Up Award</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="organizations" class="content-section">
+    <h2>Organizations</h2>
+    <p>Girls Who Code, Student Council, Science UIL, SWE, NCWIT, NHS, NASA HAS, Mu Alpha Theta</p>
+  </section>
+
+  <section id="projects" class="content-section">
+    <h2>Projects</h2>
+    <p>
+      <strong>Period AI</strong> – AI app helping girls learn women’s health<br/>
+      <strong>Cognifit</strong> – App supporting elderly mental/physical health<br/>
+      <strong>CELESTIAL</strong> – 2D Godot game following Luna’s journey
+    </p>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chinualumogu Nwosu. All rights reserved.</p>
+  </footer>
 </body>
 </html>
