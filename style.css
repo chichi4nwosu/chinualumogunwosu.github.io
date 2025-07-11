@@ -70,6 +70,23 @@
   box-sizing: border-box; /* good practice */
   min-height: 320px; /* set a minimum height so all boxes line up */
 }
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between text and icon */
+}
+h1, h2, p, h3, h4, h5, h6, ul, li, a {
+  font-family: 'Noto Sans', sans-serif;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.centered-title {
+  justify-content: center; /* centers horizontally */
+  text-align: center;
+}
+
 
 .section-box p {
   flex-grow: 1;  /* this makes the paragraph take up available space */
